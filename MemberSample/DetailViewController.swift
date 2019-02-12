@@ -86,7 +86,8 @@ class DetailViewController: UIViewController {
 			case .firstOrder, .sith:
 				message = String.init(format: Localized.weRatherYouDidnt, firstname)
 			default:
-				message = String.init(format: Localized.youGotNoForceText, firstname)
+				// Nothkng to do here...
+				break
 			}
 		}
 		
@@ -104,7 +105,7 @@ public enum Localized {
 	static let okText = NSLocalizedString("Ok", comment: "DetailViewController")
 	static let dudeText = NSLocalizedString("Dude", comment: "DetailViewController")
 	static let bornText = NSLocalizedString("Born:", comment: "DetailViewController")
-	static let agelessText = NSLocalizedString("Ageless:", comment: "DetailViewController")
+	static let agelessText = NSLocalizedString("Ageless", comment: "DetailViewController")
 	static let youGotNoForceText = NSLocalizedString("You got no force, %@!", comment: "DetailViewController")
 	static let useTheForce = NSLocalizedString("Use the force, %@!", comment: "DetailViewController")
 	static let weRatherYouDidnt = NSLocalizedString("We'ld rather you didn't, %@!", comment: "DetailViewController")
