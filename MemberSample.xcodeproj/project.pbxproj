@@ -47,6 +47,7 @@
 		B85A74302212351100C21033 /* Dictionary+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Json.swift"; sourceTree = "<group>"; };
 		B85A743222123FFD00C21033 /* Member+Syncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Member+Syncable.swift"; sourceTree = "<group>"; };
 		B85A7434221240A300C21033 /* Syncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syncable.swift; sourceTree = "<group>"; };
+		B85A74362213651800C21033 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D2BCDF3B6FFE4C96447EA07F /* Pods-MemberSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemberSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemberSample/Pods-MemberSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +74,7 @@
 		B85A73FB2211E41500C21033 = {
 			isa = PBXGroup;
 			children = (
+				B85A74362213651800C21033 /* README.md */,
 				B85A74062211E41500C21033 /* MemberSample */,
 				B85A74052211E41500C21033 /* Products */,
 				F4FD36ACD3BA279A252BBABA /* Pods */,
