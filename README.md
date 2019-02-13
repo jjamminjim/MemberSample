@@ -40,5 +40,5 @@ The following third party libraries where used in this project ...
 
 [AlamofireImage](https://github.com/Alamofire/AlamofireImage) : Used to retrieve cloud based images via url.
 
-[DBC](https://github.com/busybusy/DBC-Apple) : [Eiffle like Design by Contract Assertions](http://www.eiffel.com/developers/design_by_contract_in_detail.html) for swift.
+[DBC](https://github.com/busybusy/DBC-Apple) : [Eiffel like Design by Contract Assertions](http://www.eiffel.com/developers/design_by_contract_in_detail.html) for swift.
 
