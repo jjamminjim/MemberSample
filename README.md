@@ -10,7 +10,7 @@ There are a few protocols that provide the backend magic to the sync mechanism..
 
 [FetchableDecodable](https://github.com/jjamminjim/MemberSample/blob/master/MemberSample/Data%20Sync/FetchableDecodable.swift) : decodes JSON data directly into NSManagedObject instances. Existing objects are first queried from the data-store, and if not present, the object is created. The object is then updated with the JSON data. Duplicate objects created on multiple threads are avoided by synchronizing through a DispatchQueue supplied by a [DispatchQueueDictionary](https://github.com/jjamminjim/MemberSample/blob/master/MemberSample/Utilities/DispatchQueueDictionary.swift) keyed by NSManagedObject class names.  This is inspired by the article [Codable CoreData.](http://ffried.codes/2017/10/20/codable-coredata/).
 
-[Syncable](https://https://github.com/jjamminjim/MemberSample/blob/master/MemberSample/Data%20Sync/Syncable.swift)  :  provides a simple syncing ability between backing-server and local core-data store. Note that the implementation is quick and dirty, simply supporting the requirements for this coding sample. It gives a good starting point to develop your own syncing mechanism.
+[Syncable](https://github.com/jjamminjim/MemberSample/blob/master/MemberSample/Data%20Sync/Syncable.swift)  :  provides a simple syncing ability between backing-server and local core-data store. Note that the implementation is quick and dirty, simply supporting the requirements for this coding sample. It gives a good starting point to develop your own syncing mechanism.
 
 You can extend your own NSManagedObjects to use this mechanism by extending your subclasses in terms of the above protocols. If the default implementations are sufficient for your needs you simply need to implement the following method of the **FetchableDecodable** protocol...
 
@@ -40,5 +40,5 @@ The following third party libraries where used in this project ...
 
 [AlamofireImage](https://github.com/Alamofire/AlamofireImage) : Used to retrieve cloud based images via url.
 
-[DBC](https://github.com/busybusy/DBC-Apple) : [Eiffle like Design by Contract Assertions](http://www.eiffel.com/developers/design_by_contract_in_detail.html) for swift.
+[DBC](https://github.com/busybusy/DBC-Apple) : [Eiffel like Design by Contract Assertions](http://www.eiffel.com/developers/design_by_contract_in_detail.html) for swift.
 
