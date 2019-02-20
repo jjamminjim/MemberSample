@@ -30,6 +30,7 @@ extension Member: Syncable {
 		if dateFormatter == nil {
 			dateFormatter = DateFormatter()
 			dateFormatter?.dateFormat = "yyyy-MM-dd"
+			
 			//make sure you format the date in GMT (what the server stores it as)
 			dateFormatter?.timeZone = TimeZone(abbreviation: "GMT")
 			threadDictionary[kCachedDateFormatterKey] = dateFormatter
@@ -48,7 +49,6 @@ extension Member: Syncable {
 		self.affiliationType = json.requireString(JsonKey.affiliation.rawValue)
 		self.profilePicture = json.requireString(JsonKey.profilePicture.rawValue)
 		
-		// For now just require the dara to exist in the json stream. We'll adjust as needed, later.
 		if let birthStr = json.asString(JsonKey.birthdate.rawValue),
 			let birthDate = Member.dateFormatter.date(from: birthStr) {
 			self.birthdate = birthDate

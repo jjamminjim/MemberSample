@@ -12,4 +12,11 @@ target 'MemberSample' do
   pod 'DBC', :git => 'git@github.com:busybusy/DBC-Apple.git'
   pod 'Alamofire'
 	pod 'AlamofireImage'
+
+	
+	target 'MemberSampleTests' do
+		inherit! :search_paths
+		
+		pod 'MagicalRecord', :inhibit_warnings => true
+	end
 end

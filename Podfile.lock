@@ -11,16 +11,21 @@ PODS:
     - DBC/Swift
   - DBC/Objc (1.2.0)
   - DBC/Swift (1.2.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
   - "DBC (from `git@github.com:busybusy/DBC-Apple.git`)"
+  - MagicalRecord
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - MagicalRecord
 
 EXTERNAL SOURCES:
   DBC:
@@ -35,7 +40,8 @@ SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
   DBC: ec1e0b9779661a1f3ba320b477cc2894182e9bec
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
 
-PODFILE CHECKSUM: 30ad2508f75e7a4bd8883806ff40a693fb894a8d
+PODFILE CHECKSUM: bdf40a7c43be6306f0dbb21caa24294599627942
 
 COCOAPODS: 1.6.0.beta.2
